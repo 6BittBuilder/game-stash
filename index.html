@@ -132,7 +132,7 @@
                   const normalized = file.includes(".") ? file : file + ".html";
                   
                   // This fetches the game file directly from your own repository's 'games' folder
-                  fetch(`games/${encodeURIComponent(normalized)}`)
+                 fetch(`https://jsdelivr.net{encodeURIComponent(normalized)}`)
                     .then((response) => {
                       if (!response.ok) throw new Error("Game file not uploaded yet!");
                       return response.text();
